@@ -8,6 +8,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * 密码工具类，提供与用户密码相关的静态方法
  * Created by hypo on 15-12-26.
  */
 public class PasswordTool {

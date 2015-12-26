@@ -9,6 +9,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
 /**
+ * Token工具类，提供与用户Token相关的静态方法
  * Created by hypo on 15-12-26.
  */
 public class TokenTool {
