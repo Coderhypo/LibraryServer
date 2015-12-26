@@ -5,16 +5,16 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-        <!--管理员相关API-->
-        <package name="ADMIN" namespace="/api/admin" extends="json-default">
+        <!--借出相关API-->
+        <package name="LEND" namespace="/api/lend" extends="json-default">
                 <action name="*">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
         </package>
-        <!--读者相关API-->
-        <package name="READER" namespace="/api/reader" extends="json-default">
+        <!--归还相关API-->
+        <package name="RETURN" namespace="/api/return" extends="json-default">
                 <action name="*">
                         <result type="json">
                                 <param name="root">json</param>
