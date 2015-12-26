@@ -5,6 +5,7 @@ import net.ihypo.tools.TokenTool;
 import net.ihypo.user.IUser;
 
 /**
+ * 读者类，与数据库中readers对应
  * Created by hypo on 15-12-26.
  */
 public class Reader implements IUser{
@@ -14,11 +15,12 @@ public class Reader implements IUser{
     private String userName;
     private String userToken;
     private String userPass;
+    private Double debt;
 
     public Reader(String userLogin, String userName, String userPass) {
         this.userLogin = userLogin;
         this.userName = userName;
-        this.userPass = userPass;
+        this.debt = 0.0;
         setUserPass(userPass);
     }
 
@@ -58,5 +60,13 @@ public class Reader implements IUser{
 
     private void setUserToken() {
         this.userToken = TokenTool.getToken(this);
+    }
+
+    public Double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Double debt) {
+        this.debt = debt;
     }
 }

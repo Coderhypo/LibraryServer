@@ -5,6 +5,7 @@ import net.ihypo.tools.TokenTool;
 import net.ihypo.user.IUser;
 
 /**
+ * 管理员类，与数据库中managers表对应
  * Created by hypo on 15-12-26.
  */
 public class Manager implements IUser {
