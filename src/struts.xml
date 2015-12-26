@@ -5,7 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-        <include file="/net/ihypo/api/books_struts.xml"></include>
-        <include file="/net/ihypo/api/users_struts.xml"></include>
-        <include file="/net/ihypo/api/operation_struts.xml"></include>
+        <include file="/net/ihypo/xml/books_struts.xml"></include>
+        <include file="/net/ihypo/xml/users_struts.xml"></include>
+        <include file="/net/ihypo/xml/operation_struts.xml"></include>
 </struts>
