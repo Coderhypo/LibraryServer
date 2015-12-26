@@ -3,6 +3,7 @@ package net.ihypo.database;
 import java.util.List;
 
 /**
+ * DAO接口，规定DAO提供的方法
  * Created by hypo on 15-12-26.
  */
 public interface IDAO<T> {
