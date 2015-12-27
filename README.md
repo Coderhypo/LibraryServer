@@ -118,8 +118,8 @@ json:
 ```
 {
     admin:当前管理员id,
-    token:管理员当前token
-    bookid:删除图书id,
+    token:管理员当前token,
+    bookid:删除图书id
 }
 ```
 
