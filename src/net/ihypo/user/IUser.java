@@ -52,4 +52,9 @@ public interface IUser {
      * @return 读者返回 READER | 管理员返回 MANAGER
      */
     String getUserRule();
+
+    /**
+     * 更新用户token
+     */
+    void updateToken();
 }
