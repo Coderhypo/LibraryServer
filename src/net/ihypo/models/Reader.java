@@ -58,6 +58,11 @@ public class Reader implements IUser{
         return "READER";
     }
 
+    @Override
+    public void updateToken() {
+        setUserToken();
+    }
+
     private void setUserToken() {
         this.userToken = TokenTool.getToken(this);
     }

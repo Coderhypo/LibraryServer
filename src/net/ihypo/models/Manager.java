@@ -55,6 +55,11 @@ public class Manager implements IUser {
         return "MANAGER";
     }
 
+    @Override
+    public void updateToken() {
+        setUserToken();
+    }
+
     private void setUserToken() {
         this.userToken = TokenTool.getToken(this);
     }
