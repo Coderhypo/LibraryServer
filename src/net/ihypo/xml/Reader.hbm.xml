@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="net.ihypo.models.Reader" table="readers">
+        <cache usage="read-write"/>
+        <id name="userId" column="user_id">
+            <generator class="native"/>
+        </id>
+        <property name="userLogin" type="java.lang.String" column="user_login" unique="true"/>
+        <property name="userName" type="java.lang.String" column="user_name"/>
+        <property name="userToken" type="java.lang.String" column="user_token"/>
+        <property name="userPass" type="java.lang.String" column="user_pass"/>
+        <property name="debt" type="java.lang.Double" column="user_debt"/>
+    </class>
+</hibernate-mapping>
