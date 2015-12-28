@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="net.ihypo.models.LendLog" table="lend_logs">
+        <cache usage="read-write"/>
+        <id name="lendId" column="lend_id">
+            <generator class="native"/>
+        </id>
+        <property name="bookId" type="java.lang.Integer" column="book_id"/>
+        <property name="userId" type="java.lang.Integer" column="user_id"/>
+        <property name="lendTime" type="java.util.Date" column="lend_time"/>
+        <property name="deadlineTime" type="java.util.Date" column="deadline_time"/>
+        <property name="returnTime" type="java.util.Date" column="return_time"/>
+    </class>
+</hibernate-mapping>
