@@ -37,5 +37,11 @@
         <property name="c3p0.idleConnectionTestPeriod ">18000</property>
         <property name="c3p0.maxIdleTime">25000</property>
         <property name="c3p0.idle_test_period">120</property>
+        <!--映射文件-->
+        <mapping resource="net/ihypo/xml/Book.hbm.xml"/>
+        <mapping resource="net/ihypo/xml/BookType.hbm.xml"/>
+        <mapping resource="net/ihypo/xml/LendLog.hbm.xml"/>
+        <mapping resource="net/ihypo/xml/Reader.hbm.xml"/>
+        <mapping resource="net/ihypo/xml/Manager.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
