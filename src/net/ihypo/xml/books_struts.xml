@@ -7,6 +7,26 @@
 <struts>
         <!--图书相关API-->
         <package name="BOOK" namespace="/api/book" extends="json-default">
+                <action name="add" class="net.ihypo.actions.BookAction" method="addBook">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="delete" class="net.ihypo.actions.BookAction" method="deleteBook">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="update" class="net.ihypo.actions.BookAction" method="updateBook">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="get" class="net.ihypo.actions.BookAction" method="getBook">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
                 <action name="*">
                         <result type="json">
                                 <param name="root">json</param>
