@@ -12,7 +12,27 @@
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="*">
+                <action name="add">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="delete">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="update">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="get">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="*" class="net.ihypo.actions.ErrorAction" method="notFind">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
@@ -25,7 +45,27 @@
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="*">
+                <action name="add">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="delete">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="update">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="get">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="*" class="net.ihypo.actions.ErrorAction" method="notFind">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
