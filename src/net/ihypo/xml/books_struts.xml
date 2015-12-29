@@ -27,7 +27,7 @@
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="*">
+                <action name="*" class="net.ihypo.actions.ErrorAction" method="notFind">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
