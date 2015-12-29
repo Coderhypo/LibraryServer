@@ -33,4 +33,32 @@
                         </result>
                 </action>
         </package>
+        <!--图书分类相关API-->
+        <package name="BOOKTYPE" namespace="/api/book/type" extends="json-default">
+                <action name="add" class="net.ihypo.actions.BookTypeAction" method="addBookType">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="delete" class="net.ihypo.actions.BookTypeAction" method="deleteBookType">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="update" class="net.ihypo.actions.BookTypeAction" method="updateBookType">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="get" class="net.ihypo.actions.BookTypeAction" method="getBookType">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+                <action name="*" class="net.ihypo.actions.ErrorAction" method="notFind">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
+        </package>
 </struts>
