@@ -7,6 +7,11 @@
 <struts>
         <!--管理员相关API-->
         <package name="ADMIN" namespace="/api/admin" extends="json-default">
+                <action name="login" class="net.ihypo.actions.LoginAction" method="managerLogin">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
                 <action name="*">
                         <result type="json">
                                 <param name="root">json</param>
@@ -15,6 +20,11 @@
         </package>
         <!--读者相关API-->
         <package name="READER" namespace="/api/reader" extends="json-default">
+                <action name="login" class="net.ihypo.actions.LoginAction" method="readerLogin">
+                        <result type="json">
+                                <param name="root">json</param>
+                        </result>
+                </action>
                 <action name="*">
                         <result type="json">
                                 <param name="root">json</param>
