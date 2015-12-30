@@ -12,22 +12,22 @@
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="add">
+                <action name="add" class="net.ihypo.actions.ManagerAction" method="addManager">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="delete">
+                <action name="delete" class="net.ihypo.actions.ManagerAction" method="deleteManager">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="update">
+                <action name="update" class="net.ihypo.actions.ManagerAction" method="updateManager">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="get">
+                <action name="get" class="net.ihypo.actions.ManagerAction" method="getManager">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
@@ -45,22 +45,22 @@
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="add">
+                <action name="add" class="net.ihypo.actions.ReaderAction" method="addReader">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="delete">
+                <action name="delete" class="net.ihypo.actions.ReaderAction" method="deleteReader">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="update">
+                <action name="update" class="net.ihypo.actions.ReaderAction" method="updateReader">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
                 </action>
-                <action name="get">
+                <action name="get" class="net.ihypo.actions.ReaderAction" method="getReader">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
