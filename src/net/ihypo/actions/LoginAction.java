@@ -24,4 +24,12 @@ public class LoginAction extends ActionSupport{
 
         return SUCCESS;
     }
+
+    public Map getJson() {
+        return json;
+    }
+
+    public void setJson(Map json) {
+        this.json = json;
+    }
 }
