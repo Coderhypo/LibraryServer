@@ -22,12 +22,12 @@ public class LoginAction extends ActionSupport{
     private String pass;
 
     /** 作为API的返回结果的返回值 */
-    private Map json;
+    private Map<Object, Object> json;
 
     /** 管理员登录API的实现 */
     public String managerLogin(){
 
-        IDAO dao = new ManagerDAO();
+        IDAO<Manager> dao = new ManagerDAO();
         String HQL = "FROM Manager m WHERE m.userLogin=" + login;
         List<Manager> list = dao.query(HQL);
 
@@ -61,7 +61,7 @@ public class LoginAction extends ActionSupport{
     /** 读者登录API的实现 */
     public String readerLogin(){
 
-        IDAO dao = new ReaderDAO();
+        IDAO<Reader> dao = new ReaderDAO();
         String HQL = "FROM Reader r WHERE r.userLogin=" + login;
         List<Reader> list = dao.query(HQL);
 
