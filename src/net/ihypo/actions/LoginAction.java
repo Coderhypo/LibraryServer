@@ -3,7 +3,9 @@ package net.ihypo.actions;
 import com.opensymphony.xwork2.ActionSupport;
 import net.ihypo.database.IDAO;
 import net.ihypo.database.ManagerDAO;
+import net.ihypo.database.ReaderDAO;
 import net.ihypo.models.Manager;
+import net.ihypo.models.Reader;
 import net.ihypo.tools.PasswordTool;
 
 import java.util.HashMap;
@@ -58,6 +60,34 @@ public class LoginAction extends ActionSupport{
 
     /** 读者登录API的实现 */
     public String readerLogin(){
+
+        IDAO dao = new ReaderDAO();
+        String HQL = "FROM Reader r WHERE r.userLogin=" + login;
+        List<Reader> list = dao.query(HQL);
+
+        if(list.size() != 0) {
+
+            Reader reader = list.get(0);
+
+            if(PasswordTool.verify(pass, reader)){
+
+                // 更新token
+                reader.updateToken();
+                dao.update(reader);
+
+                json = new HashMap<>();
+                json.put("status", "200");
+                json.put("userid", reader.getUserId());
+                json.put("username", reader.getUserName());
+                json.put("token", reader.getUserToken());
+
+                return SUCCESS;
+            }
+        }
+
+        json = new HashMap<>();
+        json.put("status","403");
+        json.put("message","登录名或密码错误");
 
         return SUCCESS;
     }
