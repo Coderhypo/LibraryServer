@@ -2,6 +2,7 @@ package net.ihypo.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -15,6 +16,10 @@ public class ErrorAction extends ActionSupport{
 
     /** 使用API的URI错误NOT FIND */
     public String notFind(){
+
+        json = new HashMap<>();
+        json.put("status","404");
+        json.put("message","NOT FIND!");
 
         return SUCCESS;
     }
