@@ -5,6 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.Map;
 
 /**
+ * 管理员Action
  * Created by hypo on 15-12-30.
  */
 public class ManagerAction extends ActionSupport {
