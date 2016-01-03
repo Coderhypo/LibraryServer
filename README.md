@@ -20,6 +20,12 @@ Server端用到的技术栈：
  - Hibernate
  - MySQL
 
+## TODO
+
+ + 图书API
+ + 分类API
+ + 用户API
+
 ## API
 
 部分API需要验证管理员的token，而token的是在管理员登录的时候获取，并且管理员每次登录token将会随机刷新（并未将token放在首部）。
