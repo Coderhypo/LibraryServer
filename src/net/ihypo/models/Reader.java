@@ -24,6 +24,9 @@ public class Reader implements IUser{
         setUserPass(userPass);
     }
 
+    public Reader() {
+    }
+
     public Integer getUserId() {
         return userId;
     }

@@ -15,6 +15,9 @@ public class BookType {
         this.typeName = typeName;
     }
 
+    public BookType() {
+    }
+
     public String getTypeCode() {
         return typeCode;
     }

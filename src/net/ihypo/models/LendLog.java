@@ -35,6 +35,9 @@ public class LendLog {
         this.deadlineTime = new Date(this.lendTime.getTime() + MAXLENDTIME);
     }
 
+    public LendLog() {
+    }
+
     /**
      * 查看图书是否归还
      * @return true为已经归还 | false为未归还

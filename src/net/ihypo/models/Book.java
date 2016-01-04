@@ -28,6 +28,9 @@ public class Book {
         this.isLend = false;
     }
 
+    public Book() {
+    }
+
     public String getBookAuther() {
         return bookAuther;
     }

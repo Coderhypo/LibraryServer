@@ -22,6 +22,9 @@ public class Manager implements IUser {
         setUserPass(userPass);
     }
 
+    public Manager() {
+    }
+
     public Integer getUserId() {
         return userId;
     }
