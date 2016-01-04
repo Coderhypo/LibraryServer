@@ -31,14 +31,14 @@ public class BookLendManage {
 
     public String lendBook(){
 
-        // 验证图书信息以及合法性
-        String verifyInfo = bookVerify();
+        // 验证用户信息以及合法性
+        String verifyInfo = userVerify();
         if (verifyInfo != null){
             return verifyInfo;
         }
 
-        // 验证用户信息以及合法性
-        verifyInfo = userVerify();
+        // 验证图书信息以及合法性
+        verifyInfo = bookVerify();
         if (verifyInfo != null){
             return verifyInfo;
         }
