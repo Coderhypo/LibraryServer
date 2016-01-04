@@ -4,7 +4,7 @@ package net.ihypo.user;
  * 抽象工厂类，为读者工厂，管理员工厂类提供基础操作与数据安全性检查
  * Created by hypo on 15-12-27.
  */
-public class AbstractUserFactory {
+public abstract class AbstractUserFactory {
 
     private String userLogin;
     private String userName;
