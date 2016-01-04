@@ -7,7 +7,7 @@
 <struts>
         <!--借出相关API-->
         <package name="LEND" namespace="/api/lend" extends="json-default">
-                <action name="*">
+                <action name="*" class="net.ihypo.actions.OperatorAction" method="lendBook">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
@@ -15,7 +15,7 @@
         </package>
         <!--归还相关API-->
         <package name="RETURN" namespace="/api/return" extends="json-default">
-                <action name="*">
+                <action name="*" class="net.ihypo.actions.OperatorAction" method="returnBook">
                         <result type="json">
                                 <param name="root">json</param>
                         </result>
